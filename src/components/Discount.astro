@@ -1,0 +1,12 @@
+---
+import DiscountTag from "./subcomponents/DiscountTag.astro";
+---
+
+<section class="bg-darkColor px-20 py-40">
+    <h2 class="font-bold text-8xl mb-8 text-white"><span class="text-whiteVariationText">10% off</span> en pizzas clásicas</h2>
+    <p class="text-base font-[Inter] text-white mb-8">*Las pizzas clásicas comprenden los siguientes gustos: muzzarella. anchoas, fugazzeta, jamón, napolitana y jamón y morrones. La promoción incluye los 3 tamaños (medio metro, mediana e individual). Promoción no válida para pizzas de 2 gustos.</p>
+    <div class="flex gap-4">
+        <DiscountTag color={'text-darkColor'} bgColor={'bg-whiteVariationBg'} icon={'icons/payments.svg'} copy={'Pagando en efectivo'}/>
+        <DiscountTag color={'text-white'} bgColor={'bg-mainColor'} icon={'icons/clock.svg'} copy={'Hasta el 16/12'}/>
+    </div>
+</section>

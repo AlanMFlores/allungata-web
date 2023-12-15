@@ -1,0 +1,17 @@
+---
+
+const {image, title, portions, copy} = Astro.props;
+
+---
+
+<div class="bg-mainColor rounded-2xl">
+    <figure class="w-full">
+        <img src=`images/${image}.png` alt={title} class="object-cover w-full h-full rounded-t-2xl">
+    </figure>
+    <div class="flex flex-col items-center gap-2 p-6">
+        <h3 class="text-3xl text-white font-semibold">{title}</h3>
+        <span class="bg-whiteVariationText font-[Inter] font-semibold rounded-[100px] px-6 py-2">{portions}</span>
+        <p class="text-base text-white font-normal font-[Inter]">{copy}</p>
+    </div>
+</div>
+ 

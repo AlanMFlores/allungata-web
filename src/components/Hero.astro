@@ -1,0 +1,22 @@
+---
+import LocationTag from './subcomponents/LocationTag.astro';
+import DeliveryButton from './subcomponents/DeliveryButton.astro'
+import WithdrawButton from './subcomponents/WithdrawButton.astro'
+---
+
+<section class="grid items-center grid-cols-[1fr,377px] w-full px-20 py-12 bg-mainColor">
+    <div>
+        <LocationTag/>
+        <h1 class="text-4xl font-bold text-white mb-10">
+            Allungata es la pizzería de las <span class="text-whiteVariationText">pizzas de medio metro, empanadas artesanales</span> y mucho más.
+        </h1>
+        <div class="flex gap-4">
+            <WithdrawButton py={'py-4'}/>
+            <DeliveryButton py={'py-4'} copy={'Pedir para delivery con envío gratis'}/>
+        </div>
+    </div>
+    <div class="w-[377px]">
+        <img src="images/empanadas-hero.png" alt="empanadas hero image" class="w-[377px]">
+    </div>
+    
+</section>

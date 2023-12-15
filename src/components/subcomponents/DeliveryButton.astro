@@ -1,0 +1,8 @@
+---
+const {py, copy} = Astro.props;
+---
+<button class=`flex items-center gap-2 bg-transpBg border-2
+border-white pl-6 pr-8 ${py}`>
+    <img src="icons/motorcycle.svg" alt="motorcycle icon">
+    <p class="text-white font-[Inter] font-semibold">{copy}</p>
+</button>

@@ -1,0 +1,14 @@
+---
+import Rating from "./subcomponents/Rating.astro";
+import ReviewCard from "./ReviewCard.astro"
+---
+
+<section class="px-20 pt-20 bg-whiteVariationBg">
+    <h3 class="text-4xl font-semibold">Algunos de nuestros clientes que nos recomiendan</h3>
+    <Rating/>
+    <div class="flex gap-10 mt-12">
+        <ReviewCard/>
+        <ReviewCard/>
+        <ReviewCard/>
+    </div>
+</section>

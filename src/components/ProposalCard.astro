@@ -1,0 +1,11 @@
+---
+const {icon, title, copy} = Astro.props;
+
+
+---
+
+<div class="px-8 py-8 bg-white rounded-2xl">
+    <img src=`icons/${icon}.svg` alt="width icon" class="mb-6">
+    <h3 class="text-2xl font-semibold mb-2">{title}</h3>
+    <p class="font-[Inter] text-base text-textGray">{copy}</p>
+</div>
