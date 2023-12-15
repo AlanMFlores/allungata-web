@@ -9,6 +9,7 @@ export default {
 				whiteVariationText: '#F3C9C9',
 				whiteVariationBg: '#FEF6F3',
 				textGray: '#646162',
+				bgLightGray: '#F3F3F3',
 				darkColor: '#101010'
 			}
 		},
