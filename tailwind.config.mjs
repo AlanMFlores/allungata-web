@@ -11,7 +11,11 @@ export default {
 				textGray: '#646162',
 				bgLightGray: '#F3F3F3',
 				darkColor: '#101010'
-			}
+			},
+			classes: {
+				'answer': 'opacity-0 max-h-0 overflow-hidden 0.3s ease',
+				'block-opacity': 'opacity-100 max-h-full',
+			},
 		},
 	},
 	plugins: [],

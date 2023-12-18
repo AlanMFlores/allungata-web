@@ -5,13 +5,13 @@ const {question, answer} = Astro.props;
 ---
 
 <div>
-    <div class="flex justify-between p-4 bg-white">
+    <div class="flex justify-between p-4 bg-white cursor-pointer faq-header">
         <p class="text-base">¿Cuál es el <span class="font-semibold">horario</span> de atención?</p>
         <button>
             <img src="icons/arrow-down.svg" alt="arrow down icon">
         </button>
     </div>
-    <div class="p-4 bg-bgLightGray">
+    <div class="p-4 bg-bgLightGray hidden">
         <p>Nuestro horario de atención es de lunes a sábado. Turno tarde: de 11 a 14:30hs. Turno noche: de 19 a 22:30hs.</p>
     </div>
 </div>

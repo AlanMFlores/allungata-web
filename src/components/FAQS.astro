@@ -4,6 +4,13 @@ import Question from "./Question.astro";
 
 ---
 
+<style>
+    .block-op {
+        max-height: 56px; /* O el valor máximo que necesites */
+        opacity: 1;
+    }
+</style>
+
 <section class="p-20 bg-whiteVariationBg">
     <h3 class="text-4xl font-semibold text-darkColor mb-[72px]">Preguntas frecuentes (FAQ)</h3>
     <div class="mb-6">
@@ -52,3 +59,16 @@ import Question from "./Question.astro";
         </div>
     </div>
 </section>
+
+<script>
+    const faqHeaders = document.querySelectorAll('.faq-header');
+
+    faqHeaders.forEach(faqHeader => {
+        faqHeader.addEventListener('click', () => {
+            const questionContainer = faqHeader.closest('.flex');
+            const answer = questionContainer.nextElementSibling;
+
+            answer.classList.toggle('hidden');
+        });
+    });
+</script>
