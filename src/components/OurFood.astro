@@ -2,11 +2,11 @@
 import FoodCard from "./FoodCard.astro";
 ---
 
-<section class="gap-12 px-20 py-32 bg-whiteVariationBg">
+<section class="gap-12 px-4 lg:px-20 py-32 bg-whiteVariationBg">
     <h3 class="text-4xl font-semibold mb-4">Algunos de nuestros clientes que nos recomiendan</h3>
     <p class="text-base font-[Inter]">Las pizzas tradicionales y especiales hechas por nosotros. Elegí a la piedra o media masa.</p>
 
-    <div class="grid grid-cols-3 gap-6 justify-center mt-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center mt-12">
         <FoodCard image={'empanadas-card'} title={'Pizzas'} description={'Las pizzas tradicionales y especiales hechas por nosotros. Elegí a la piedra o media masa.'} tags={['Artesanal']}/>
         <FoodCard image={'empanadas-card'} title={'Pizzas Rellenas'} description={'Al estilo calzone, nuestras pizzas rellenas son una bomba de sabor.'} tags={['Artesanal']}/>
         <FoodCard image={'empanadas-card'} title={'Empanadas'} description={'Disfrutá de nuestras comidas artesanales, donde la atención a los detalles se traduce en sabores genuinos y auténticos.'} tags={['Artesanal', 'Al horno']}/>

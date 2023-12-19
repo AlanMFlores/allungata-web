@@ -5,7 +5,7 @@ const {image, title, portions, copy} = Astro.props;
 ---
 
 <div class="bg-mainColor rounded-2xl">
-    <figure class="w-full">
+    <figure class="w-full h-[208px] lg:h-auto">
         <img src=`images/${image}.png` alt={title} class="object-cover w-full h-full rounded-t-2xl">
     </figure>
     <div class="flex flex-col items-center gap-2 p-6">
