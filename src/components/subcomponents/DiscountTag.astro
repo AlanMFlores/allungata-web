@@ -4,7 +4,7 @@ const {color, bgColor, copy, icon} = Astro.props;
 
 ---
 
-<div class=`${color} ${bgColor} inline-flex items-center gap-4 px-6 py-4 rounded-[100px]`>
+<div class=`${color} ${bgColor} inline-flex items-center gap-4 w-fit px-6 py-4 rounded-[100px]`>
     <img src={icon} alt={copy}>
     <p class="font-[Inter] font-semibold">{copy}</p>
 </div>
