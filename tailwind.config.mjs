@@ -10,7 +10,11 @@ export default {
 				whiteVariationBg: '#FEF6F3',
 				textGray: '#646162',
 				bgLightGray: '#F3F3F3',
-				darkColor: '#101010'
+				darkColor: '#101010',
+				timeStateGreen: '#0FF084',
+				timeStateRed: '#F00F0F',
+				timeStateOrange: '#EA5A2C',
+				timeStateYellow: '#EAB52C'
 			},
 			classes: {
 				'answer': 'opacity-0 max-h-0 overflow-hidden 0.3s ease',
