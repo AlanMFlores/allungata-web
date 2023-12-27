@@ -33,8 +33,8 @@ const TimeState: React.FC= () => {
 
     return (
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-transpBg rounded-[100px] mb-4">
-            <div className={`grid place-content-center border-2 ${isOpen ? 'border-timeStateGreen' : 'border-timeStateRed'} rounded-full w-[16px] h-[16px] p-1`}>
-                <span className={`animate-ping block rounded-full ${isOpen ? 'bg-timeStateGreen' : 'bg-timeStateRed'}  h-[6px] w-[6px]`}></span>
+            <div className={`grid place-content-center border-2 ${isOpen ? 'border-timeStateGreen' : 'border-red-700'} rounded-full w-[16px] h-[16px] p-1`}>
+                <span className={`animate-ping block rounded-full ${isOpen ? 'bg-timeStateGreen' : 'bg-red-700'}  h-[6px] w-[6px]`}></span>
             </div>
             <p className="text-white text-sm font-semibold font-[Inter]">{isOpen ? 'Abierto' : 'Cerrado'}</p>
         </div>

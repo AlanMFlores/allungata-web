@@ -20,6 +20,15 @@ export default {
 				'answer': 'opacity-0 max-h-0 overflow-hidden 0.3s ease',
 				'block-opacity': 'opacity-100 max-h-full',
 			},
+			keyframes: {
+				infiniteSlider: {
+					from : {transform: "translateX(0%)"},
+					to : {transform: "translateX(calc(-100% - 32px))"}
+				}
+			},
+			animation: {
+				infiniteSlider: "infiniteSlider 10s linear infinite"
+			}
 		},
 	},
 	plugins: [],
