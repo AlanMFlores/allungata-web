@@ -1,8 +1,8 @@
 ---
-const {py, copy} = Astro.props;
+const {py, link} = Astro.props;
 ---
-<button class=`flex justify-center lg:justify-left items-center gap-2 bg-transpBg border-2
-border-white pl-6 pr-8 ${py} rounded-sm`>
+<a href={link} target="_blank" class=`flex justify-center lg:justify-left items-center gap-2 bg-transpBg hover:bg-transpBlackBg duration-200 border-2
+border-white pl-6 pr-8 py-4 rounded-[4px]`>
     <img src="icons/motorcycle.svg" alt="motorcycle icon">
-    <p class="text-white font-[Inter] font-semibold">{copy}</p>
-</button>
+    <p class="text-white font-[Inter] font-semibold">Hacer mi pedido para delivery</p>
+</a>

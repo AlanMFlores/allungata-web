@@ -6,6 +6,7 @@ export default {
 			colors: {
 				mainColor : '#C10961',
 				transpBg : 'rgba(255,255,255, .16)',
+				transpBlackBg : 'rgba(0,0,0, .40)',
 				whiteVariationText: '#F3C9C9',
 				whiteVariationBg: '#FEF6F3',
 				textGray: '#646162',
@@ -14,7 +15,7 @@ export default {
 				timeStateGreen: '#0FF084',
 				timeStateRed: '#F00F0F',
 				timeStateOrange: '#EA5A2C',
-				timeStateYellow: '#EAB52C'
+				timeStateYellow: '#EAB52C',
 			},
 			classes: {
 				'answer': 'opacity-0 max-h-0 overflow-hidden 0.3s ease',
