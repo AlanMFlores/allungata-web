@@ -1,9 +1,11 @@
 ---
 
+const {review, customer} = Astro.props;
+
 ---
 
 <div class="border-2 p-8 border-darkColor rounded-2xl">
-    <img src="icons/five-stars.svg" alt="cinco estrellas" class="mb-4">
-    <p class="mb-6">“Riquísima en todas sus variedades, también las empanadas. Me gusta el formato, es una pizza larga, rectangular. La atención excelente. Llega todo en tiempo y forma.”</p>
-    <h4>Vanina Pujol</h4>
+    <img src="icons/five-stars.png" alt="cinco estrellas" class="mb-4">
+    <p class="mb-6">{review}</p>
+    <h4>{customer}</h4>
 </div>

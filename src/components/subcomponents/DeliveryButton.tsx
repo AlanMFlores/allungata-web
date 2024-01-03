@@ -7,8 +7,10 @@ interface LinkButton {
 const DeliveryButton: React.FC<LinkButton>= ({link}) => {
     return(
         <a href={link} target="_blank" className={`flex justify-center lg:justify-left items-center gap-2 bg-transpBg hover:bg-transpBlackBg duration-200 border-2
-        border-white pl-6 pr-8 py-4 rounded-[4px]`}>
-            <img src="icons/motorcycle.svg" alt="motorcycle icon"/>
+        border-white text-white pl-6 pr-8 py-4 rounded-[4px]`}>
+            <span className="material-symbols-outlined">
+                motorcycle
+            </span>
             <p className="text-white font-[Inter] font-semibold">Hacer mi pedido para delivery</p>
         </a>
     )

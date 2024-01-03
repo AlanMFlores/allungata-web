@@ -8,9 +8,9 @@ import ReviewCard from "./ReviewCard.astro"
     <div class="w-full flex justify-center lg:justify-start">
         <Rating/>
     </div>
-    <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 mt-12">
-        <ReviewCard/>
-        <ReviewCard/>
-        <ReviewCard/>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-12">
+        <ReviewCard review={"“Riquísima en todas sus variedades, también las empanadas. Me gusta el formato, es una pizza larga, rectangular. La atención excelente. Llega todo en tiempo y forma.”"} customer={"Vanina Pujol"}/>
+        <ReviewCard review={"“Siempre pedimos la pizza de medio metro o empanadas. Cada vez mas rico todo y muy buen precio. Una joyita de palermo.”"} customer={"Francisco Díaz"}/>
+        <ReviewCard review={"“Pizzería familiar con excelente calidad y servicio! Tuve un inconveniente con pedidos ya y ellos lo resolvieron enseguida! SUPER RECOMENDABLE Y RIQUÍSIMO”"} customer={"Pablo de Lucca"}/>
     </div>
 </section>
