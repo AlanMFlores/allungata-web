@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 
-interface MessageProps {
+interface TimeStateProps {
     isOpen: boolean;
 }
 
-const TimeState: React.FC= () => {
+const TimeState: React.FC<TimeStateProps> = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpeningSoon, setIsOpeningSoon] = useState(false);
+    const [isClosingSoon, setIsClosingSoon] = useState(false);
 
     useEffect(() => {
         updateMessage();
@@ -18,25 +20,35 @@ const TimeState: React.FC= () => {
 
     const updateMessage = () => {
         const now = new Date();
-        const currentHour = now.getUTCHours();
+        console.log(now)
+        const currentHour = now.getHours();
+        const currentMinutes = now.getMinutes();
 
-        const firstOpenHourStart = 11;
-        const firstOpenHourEnd = 15;
-        const secondOpenHourStart = 19;
-        const secondOpenHourEnd = 23;
+        const open = 
+            ((currentHour >= 11 && currentMinutes >= 0) && (currentHour <= 14 && currentMinutes <= 30)) ||
+            ((currentHour >= 19 && currentMinutes >= 0) && (currentHour <= 22 && currentMinutes <= 30))
 
-        const isFirstOpen = currentHour >= firstOpenHourStart && currentHour < firstOpenHourEnd;
-        const isSecondOpen = currentHour >= secondOpenHourStart && currentHour < secondOpenHourEnd;
+        const openingSoon = 
+            ((currentHour === 10 && (currentMinutes >= 30 && currentMinutes <= 59))) ||
+            ((currentHour === 18 && (currentMinutes >= 30 && currentMinutes <= 59 )))
 
-        setIsOpen(isFirstOpen || isSecondOpen)
+        const closingSoon = 
+            ((currentHour === 14 && (currentMinutes >= 0 && currentMinutes < 30))) ||
+            ((currentHour === 22 && (currentMinutes > 0 && currentMinutes < 30)))
+
+        setIsOpen(open);
+        setIsOpeningSoon(openingSoon);
+        setIsClosingSoon(closingSoon);
+
     }
 
     return (
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-[100px] mb-4">
-            <div className={`grid place-content-center border-2 ${isOpen ? 'border-timeStateGreen' : 'border-red-700'} rounded-full w-[16px] h-[16px] p-1`}>
-                <span className={`animate-ping block rounded-full ${isOpen ? 'bg-timeStateGreen' : 'bg-red-700'}  h-[6px] w-[6px]`}></span>
+            <div className={`grid place-content-center border-2 ${isOpeningSoon ? 'border-orange-600' : isClosingSoon ? 'border-yellow-600' : isOpen ? 'border-green-600' : 'border-red-700'} rounded-full w-[16px] h-[16px] p-1`}>
+                <span className={`animate-ping block rounded-full ${isOpeningSoon ? 'bg-orange-600' : isClosingSoon ? 'bg-yellow-600' : isOpen ? 'bg-green-600' : 'bg-red-700'}  h-[6px] w-[6px]`}></span>
             </div>
-            <p className="text-mainColor text-sm font-semibold font-[Inter]">{isOpen ? 'Abierto' : 'Cerrado'}</p>
+            <p className={`text-sm font-bold font-[Inter] ${isOpeningSoon ? 'text-orange-600' : isClosingSoon ? 'text-yellow-600' : isOpen ? 'text-green-600' : 'text-red-700'}`}>
+                { isOpeningSoon ? 'Abrimos en unos minutos' : isClosingSoon ? 'Cerramos en unos minutos' : isOpen ? 'Abierto' : 'Cerrado'}</p>
         </div>
     )
 }

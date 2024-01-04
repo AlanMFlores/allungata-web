@@ -3,14 +3,16 @@ import Rating from "./subcomponents/Rating.astro";
 import ReviewCard from "./ReviewCard.astro"
 ---
 
-<section class="px-4 lg:px-20 pt-10 lg:pt-20 bg-whiteVariationBg">
-    <h3 class="text-4xl font-semibold">Algunos de nuestros clientes que nos recomiendan</h3>
-    <div class="w-full flex justify-center lg:justify-start">
-        <Rating/>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-12">
-        <ReviewCard review={"“Riquísima en todas sus variedades, también las empanadas. Me gusta el formato, es una pizza larga, rectangular. La atención excelente. Llega todo en tiempo y forma.”"} customer={"Vanina Pujol"}/>
-        <ReviewCard review={"“Siempre pedimos la pizza de medio metro o empanadas. Cada vez mas rico todo y muy buen precio. Una joyita de palermo.”"} customer={"Francisco Díaz"}/>
-        <ReviewCard review={"“Pizzería familiar con excelente calidad y servicio! Tuve un inconveniente con pedidos ya y ellos lo resolvieron enseguida! SUPER RECOMENDABLE Y RIQUÍSIMO”"} customer={"Pablo de Lucca"}/>
+<section class="bg-whiteVariationBg">
+    <div class="max-w-[1600px] m-auto px-4 lg:px-20 pt-10 lg:pt-20">
+        <h3 class="text-4xl font-semibold">Algunos de nuestros clientes que nos recomiendan</h3>
+        <div class="w-full flex justify-center lg:justify-start">
+            <Rating/>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-12">
+            <ReviewCard review={"“Riquísima en todas sus variedades, también las empanadas. Me gusta el formato, es una pizza larga, rectangular. La atención excelente. Llega todo en tiempo y forma.”"} customer={"Vanina Pujol"}/>
+            <ReviewCard review={"“Siempre pedimos la pizza de medio metro o empanadas. Cada vez mas rico todo y muy buen precio. Una joyita de palermo.”"} customer={"Francisco Díaz"}/>
+            <ReviewCard review={"“Pizzería familiar con excelente calidad y servicio! Tuve un inconveniente con pedidos ya y ellos lo resolvieron enseguida! SUPER RECOMENDABLE Y RIQUÍSIMO”"} customer={"Pablo de Lucca"}/>
+        </div>
     </div>
 </section>

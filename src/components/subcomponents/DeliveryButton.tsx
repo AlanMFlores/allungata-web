@@ -12,7 +12,7 @@ const DeliveryButton: React.FC<LinkButton>= ({link, py}) => {
             <span className="material-symbols-outlined">
                 motorcycle
             </span>
-            <p className="text-white font-[Inter] font-semibold">Hacer mi pedido para delivery</p>
+            <p className="text-white font-[Inter]">Hacer mi pedido <span className='font-semibold'>para delivery</span></p>
         </a>
     )
 }

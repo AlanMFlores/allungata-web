@@ -11,7 +11,7 @@ const WithdrawButton: React.FC<LinkButton>= ({link, py}) => {
             <span className="material-symbols-outlined">
                 directions_walk
             </span>
-            <p className="font-[Inter] font-semibold">Pedir para retirar</p>
+            <p className="font-[Inter]">Hacer mi pedido <span className='font-semibold'>para retirar</span></p>
         </a>
     )
 }

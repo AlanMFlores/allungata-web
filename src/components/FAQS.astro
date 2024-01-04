@@ -11,52 +11,54 @@ import Question from "./Question.astro";
     }
 </style>
 
-<section class="px-4 py-8 lg:p-20 bg-whiteVariationBg">
-    <h3 class="text-4xl font-semibold text-darkColor mb-[72px]">Preguntas frecuentes (FAQ)</h3>
-    <div class="mb-6">
-        <div class="flex items-center gap-4 p-4">
-            <img src="images/question.png" alt="question icon">
-            <h4 class="font-semibold text-2xl">Sobre Nosotros</h4>
+<section class="bg-whiteVariationBg">
+    <section class="max-w-[1600px] m-auto px-4 py-8 lg:p-20">
+        <h3 class="text-4xl font-semibold text-darkColor mb-[72px]">Preguntas frecuentes (FAQ)</h3>
+        <div class="mb-6">
+            <div class="flex items-center gap-4 p-4">
+                <img src="images/question.png" alt="question icon">
+                <h4 class="font-semibold text-2xl">Sobre Nosotros</h4>
+            </div>
+            <div>
+                <Question question={"¿Cuál es el horario de atención?"} answer={"Nuestro horario de atención es de lunes a sábado. Turno tarde: de 11 a 14:30hs. Turno noche: de 19 a 22:30hs."}/>    
+                <Question question={"¿Puedo pedir por whatsapp o Instagram?"} answer={"Por el momento sólo tomamos pedidos por esta web o por teléfono."}/>   <Question question={"¿Cuál es la dirección de Allungata?"} answer={"Allungata se encuentra en Bonpland 2456, entre Charcas y Av. Santa Fe. En el barrio de Palermo Hollywood."}/>
+            </div>
         </div>
-        <div>
-            <Question question={"¿Cuál es el horario de atención?"} answer={"Nuestro horario de atención es de lunes a sábado. Turno tarde: de 11 a 14:30hs. Turno noche: de 19 a 22:30hs."}/>    
-            <Question question={"¿Puedo pedir por whatsapp o Instagram?"} answer={"Por el momento sólo tomamos pedidos por esta web o por teléfono."}/>   <Question question={"¿Cuál es la dirección de Allungata?"} answer={"Allungata se encuentra en Bonpland 2456, entre Charcas y Av. Santa Fe. En el barrio de Palermo Hollywood."}/>
+        <div class="mb-6">
+            <div class="flex items-center gap-4 p-4">
+                <img src="images/question.png" alt="question icon">
+                <h4 class="font-semibold text-2xl">Sobre envío</h4>
+            </div>
+            <div>
+                <Question question={"¿Cuánto me cuesta el envío?"} answer={"El envío es gratis."}/>    
+                <Question question={"¿Cuál es el área de envío?"} answer={"El área de envío está limitado por las siguientes avenidas: Del Libertador, Scalabrini Ortiz, Niceto Vega y Federico Lacroze."}/>    
+                <Question question={"¿Cuál es monto mínimo para envío?"} answer={"Allungata se encuentra en Bonpland 2456, entre Charcas y Av. Santa Fe. En el barrio de Palermo Hollywood."}/>    
+            </div>
         </div>
-    </div>
-    <div class="mb-6">
-        <div class="flex items-center gap-4 p-4">
-            <img src="images/question.png" alt="question icon">
-            <h4 class="font-semibold text-2xl">Sobre envío</h4>
+        <div class="mb-6">
+            <div class="flex items-center gap-4 p-4">
+                <img src="images/question.png" alt="question icon">
+                <h4 class="font-semibold text-2xl">Sobre medios de pago</h4>
+            </div>
+            <div>
+                <Question question={"¿Aceptan tarjetas de crédito y débito?"} answer={"Sí, aceptamos tarjetas de crédito y débito de todos los bancos y billeteras."}/>    
+                <Question question={"¿Aceptan transferencia?"} answer={"Sí, aceptamos transferencia al alias pizza2456 (Francisco Florencio Flores)."}/>    
+                <Question question={"¿Aceptan QR de Mercado Pago y MODO?"} answer={"Sí, aceptamos pagos con QR de Mercado Pago y MODO."}/>    
+                 
+            </div>
         </div>
-        <div>
-            <Question question={"¿Cuánto me cuesta el envío?"} answer={"El envío es gratis."}/>    
-            <Question question={"¿Cuál es el área de envío?"} answer={"El área de envío está limitado por las siguientes avenidas: Del Libertador, Scalabrini Ortiz, Niceto Vega y Federico Lacroze."}/>    
-            <Question question={"¿Cuál es monto mínimo para envío?"} answer={"Allungata se encuentra en Bonpland 2456, entre Charcas y Av. Santa Fe. En el barrio de Palermo Hollywood."}/>    
+        <div class="mb-6">
+            <div class="flex items-center gap-4 p-4">
+                <img src="images/question.png" alt="question icon">
+                <h4 class="font-semibold text-2xl">Sobre nuestra comida</h4>
+            </div>
+            <div>
+                <Question question={"¿Se puede elegir el tipo de masa para las pizzas?"} answer={"Sí, podés elegir tus pizzas a la piedra (más finita) o media masa (más gruesa)."}/>    
+                <Question question={"¿Tienen empanadas fritas?"} answer={"No, solo tenemos empanadas al horno."}/>    
+                <Question question={"¿Tienen comida apta para celíacos?"} answer={"No, por el momento no hacemos comida apta para celíacos."}/>    
+            </div>
         </div>
-    </div>
-    <div class="mb-6">
-        <div class="flex items-center gap-4 p-4">
-            <img src="images/question.png" alt="question icon">
-            <h4 class="font-semibold text-2xl">Sobre medios de pago</h4>
-        </div>
-        <div>
-            <Question question={"¿Aceptan tarjetas de crédito y débito?"} answer={"Sí, aceptamos tarjetas de crédito y débito de todos los bancos y billeteras."}/>    
-            <Question question={"¿Aceptan transferencia?"} answer={"Sí, aceptamos transferencia al alias pizza2456 (Francisco Florencio Flores)."}/>    
-            <Question question={"¿Aceptan QR de Mercado Pago y MODO?"} answer={"Sí, aceptamos pagos con QR de Mercado Pago y MODO."}/>    
-             
-        </div>
-    </div>
-    <div class="mb-6">
-        <div class="flex items-center gap-4 p-4">
-            <img src="images/question.png" alt="question icon">
-            <h4 class="font-semibold text-2xl">Sobre nuestra comida</h4>
-        </div>
-        <div>
-            <Question question={"¿Se puede elegir el tipo de masa para las pizzas?"} answer={"Sí, podés elegir tus pizzas a la piedra (más finita) o media masa (más gruesa)."}/>    
-            <Question question={"¿Tienen empanadas fritas?"} answer={"No, solo tenemos empanadas al horno."}/>    
-            <Question question={"¿Tienen comida apta para celíacos?"} answer={"No, por el momento no hacemos comida apta para celíacos."}/>    
-        </div>
-    </div>
+    </section>
 </section>
 
 <script>

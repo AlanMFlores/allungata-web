@@ -1,23 +1,23 @@
 ---
-
-// import TimeState from './TimeState.tsx';
+import TimeState from './TimeState.tsx';
 import DeliveryButton from './subcomponents/DeliveryButton.tsx'
 import WithdrawButton from './subcomponents/WithdrawButton.tsx'
 ---
 
-<section class="flex flex-col gap-8 lg:grid items-center grid-cols-3 w-full px-4 lg:px-20 py-12 bg-mainColor">
-    <div class="col-start-1 col-end-3">
-        <!-- <TimeState/> -->
-        <h1 class="text-4xl font-bold text-white mb-10">
-            La pizzería artesanal, para vos que preferís darte un buen gusto
-        </h1>
-        <div class="flex flex-col lg:flex-row gap-4">
-            <WithdrawButton py={"py-4"} link={"https://g.waitry.net/order/3301/allungata/take-away"}/>
-            <DeliveryButton py={"py-4"} link={"https://g.waitry.net/order/3301/allungata/delivery"}/>
+<section class="bg-mainColor w-full">
+    <section class="max-w-[1600px] m-auto flex flex-col gap-8 lg:grid items-center grid-cols-3 px-4 lg:px-20 py-12 ">
+        <div class="col-start-1 col-end-3">
+            <TimeState client:load/>
+            <h1 class="text-4xl font-bold text-white mb-10">
+                La pizzería artesanal, para vos que preferís darte un buen gusto
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-4">
+                <WithdrawButton py={"py-4"} link={"https://g.waitry.net/order/3301/allungata/take-away"}/>
+                <DeliveryButton py={"py-4"} link={"https://g.waitry.net/order/3301/allungata/delivery"}/>
+            </div>
         </div>
-    </div>
-    <div>
-        <img src="images/empanadas-hero.png" alt="empanadas hero image" class="w-[377px]">
-    </div>
-    
+        <div>
+            <img src="images/empanadas-hero.png" alt="empanadas hero image" class="w-[377px]">
+        </div>
+    </section>
 </section>
