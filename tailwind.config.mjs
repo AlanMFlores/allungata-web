@@ -6,7 +6,7 @@ export default {
 			colors: {
 				mainColor : '#C10961',
 				transpBg : 'rgba(255,255,255, .16)',
-				transpBlackBg : 'rgba(0,0,0, .40)',
+				transpBlackBg : 'rgba(0,0,0, .64)',
 				whiteVariationText: '#F3C9C9',
 				whiteVariationBg: '#FEF6F3',
 				textGray: '#646162',

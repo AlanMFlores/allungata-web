@@ -20,13 +20,12 @@ const TimeState: React.FC<TimeStateProps> = () => {
 
     const updateMessage = () => {
         const now = new Date();
-        console.log(now)
         const currentHour = now.getHours();
         const currentMinutes = now.getMinutes();
 
         const open = 
-            ((currentHour >= 11 && currentMinutes >= 0) && (currentHour <= 14 && currentMinutes <= 30)) ||
-            ((currentHour >= 19 && currentMinutes >= 0) && (currentHour <= 22 && currentMinutes <= 30))
+            ((currentHour >= 11 && currentHour < 14) || (currentHour === 14 && (currentMinutes >=0 && currentMinutes < 30))) ||
+            ((currentHour >= 19 && currentHour < 22) || (currentHour === 22 && (currentMinutes >=0 && currentMinutes < 30)))
 
         const openingSoon = 
             ((currentHour === 10 && (currentMinutes >= 30 && currentMinutes <= 59))) ||
